@@ -1,4 +1,4 @@
-package logic;
+package server;
 
 import java.security.Principal;
 import java.util.HashMap;

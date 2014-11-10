@@ -1,4 +1,4 @@
-package logic;
+package server;
 
 import java.io.File;
 
@@ -23,6 +23,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 //Tell Spring to automatically inject any dependencies that are marked in
 //our classes with @Autowired
 @EnableAutoConfiguration
+//Tell Spring to turn on WebMVC (e.g., it should enable the DispatcherServlet
+//so that requests can be routed to our Controllers)
+@EnableWebMvc
 // Tell Spring that this object represents a Configuration for the
 // application
 @Configuration
