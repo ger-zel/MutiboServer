@@ -20,7 +20,11 @@ public class SrvController {
 	@Autowired
 	private GameSetRepository gameSets;
 
-	private Map<String, Long> users = new HashMap<String, Long>();
+	private static Map<String, Long> users = new HashMap<String, Long>();
+	
+	public static void addUser(String username) {
+		users.put(username, (long) 0);
+	}
 	
 	@RequestMapping(value=SrvAPI.GAME_REPOSITORY_CAPACITY, method = RequestMethod.GET)
 	public @ResponseBody Long getRepoCapacity() {

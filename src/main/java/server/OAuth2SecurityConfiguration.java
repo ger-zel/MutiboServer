@@ -172,6 +172,14 @@ public class OAuth2SecurityConfiguration {
 							User.create("user3", "pass", "USER"),
 							User.create("user4", "pass", "USER"),
 							User.create("user5", "pass", "USER")));
+			
+			SrvController.addUser("admin");
+			SrvController.addUser("user0");
+			SrvController.addUser("user1");
+			SrvController.addUser("user2");
+			SrvController.addUser("user3");
+			SrvController.addUser("user4");
+			SrvController.addUser("user5");
 
 			// Since clients have to use BASIC authentication with the client's id/secret,
 			// when sending a request for a password grant, we make each client a user
