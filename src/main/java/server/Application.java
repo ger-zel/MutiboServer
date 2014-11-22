@@ -4,6 +4,7 @@ import java.io.File;
 
 import org.apache.catalina.connector.Connector;
 import org.apache.coyote.http11.Http11NioProtocol;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -40,8 +41,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Import(OAuth2SecurityConfiguration.class)
 
 public class Application extends RepositoryRestMvcConfiguration {
-
-	public static void main(String[] args) {
+	
+	public static void main(String[] args) {		
+		
 		SpringApplication.run(Application.class, args);
 	}
 	

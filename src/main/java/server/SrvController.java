@@ -116,7 +116,70 @@ public class SrvController {
 		if (!users.containsKey(name)) {
 			return (long) 0;
 		}
+		
+		if (gameSets.count() == 0) {
+			
+			GameSet gameSet = new GameSet("American Pie",
+										  "Mean Girls", 
+										  "Titanic",
+										  "The Breakfast Club",
+										  (long) 3,
+										  "By Genre: Titanic is not a High school movie",
+										  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("The Hunger Games",
+								  "Breakfast at Tiffanies", 
+								  "Slumdog Millionaire",
+								  "Django Unchained",
+								  (long) 2,
+								  "By Age: While the others movies are quite recent, Breakfast at tiffanies is a very old movie",
+								  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("Taken",
+					  			  "Run", 
+					  			  "Leon: The Professional",
+					  			  "The Transporter",
+					  			  (long) 3,
+					  			  "By Director: Leon: The Professional is not a movie by Luc Besson",
+					  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("Mad Max",
+		  			  			  "The Year of Living Dangerously", 
+		  			  			  "Braveheart",
+		  			  			  "Revolutionary Road",
+		  			  			  (long) 4,
+		  			  			  "By Actor: Mel Gibson does not appear in Revolutionary Road",
+		  			  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("Unbreakable",
+		  			  			  "The Sixth Sense", 
+		  			  			  "The Village",
+		  			  			  "12 Monkeys",
+		  			  			  (long) 4,
+		  			  			  "By Director: 12 Monkeys is not a movie by M. Night Shyamalan",
+		  			  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("Titanic",
+		  			  			  "Gladiator", 
+		  			  			  "American Beauty",
+		  			  			  "King's Speech",
+		  			  			  (long) 1,
+		  			  			  "By Oscar Win: All the rest, won best movie and best Actor ",
+		  			  			  (long)0);
+			gameSets.save(gameSet);
+		}
 			
 		return (Long) users.get(name);
+	}
+	
+	@RequestMapping(value=SrvAPI.LEADERS_LIST, method = RequestMethod.GET)
+	public @ResponseBody Map<String, Long> getLeadersList(){
+		
+		return users;
 	}
 }
