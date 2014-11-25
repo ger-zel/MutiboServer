@@ -124,7 +124,7 @@ public class SrvController {
 										  "Titanic",
 										  "The Breakfast Club",
 										  (long) 3,
-										  "By Genre: Titanic is not a High school movie",
+										  "By Genre: Titanic is not a High school movie.",
 										  (long)0);
 			gameSets.save(gameSet);
 			
@@ -133,7 +133,7 @@ public class SrvController {
 								  "Slumdog Millionaire",
 								  "Django Unchained",
 								  (long) 2,
-								  "By Age: While the others movies are quite recent, Breakfast at tiffanies is a very old movie",
+								  "By Age: While the others movies are quite recent, Breakfast at tiffanies is a very old movie.",
 								  (long)0);
 			gameSets.save(gameSet);
 			
@@ -142,7 +142,7 @@ public class SrvController {
 					  			  "Leon: The Professional",
 					  			  "The Transporter",
 					  			  (long) 3,
-					  			  "By Director: Leon: The Professional is not a movie by Luc Besson",
+					  			  "By Director: Leon: The Professional is not a movie by Luc Besson.",
 					  			  (long)0);
 			gameSets.save(gameSet);
 			
@@ -151,7 +151,7 @@ public class SrvController {
 		  			  			  "Braveheart",
 		  			  			  "Revolutionary Road",
 		  			  			  (long) 4,
-		  			  			  "By Actor: Mel Gibson does not appear in Revolutionary Road",
+		  			  			  "By Actor: Mel Gibson does not appear in Revolutionary Road.",
 		  			  			  (long)0);
 			gameSets.save(gameSet);
 			
@@ -160,7 +160,7 @@ public class SrvController {
 		  			  			  "The Village",
 		  			  			  "12 Monkeys",
 		  			  			  (long) 4,
-		  			  			  "By Director: 12 Monkeys is not a movie by M. Night Shyamalan",
+		  			  			  "By Director: 12 Monkeys is not a movie by M. Night Shyamalan.",
 		  			  			  (long)0);
 			gameSets.save(gameSet);
 			
@@ -169,8 +169,44 @@ public class SrvController {
 		  			  			  "American Beauty",
 		  			  			  "King's Speech",
 		  			  			  (long) 1,
-		  			  			  "By Oscar Win: All the rest, won best movie and best Actor ",
+		  			  			  "By Oscar Win: All the rest, won best movie and best Actor.",
 		  			  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("München",
+					  			  "The Last King of Scotland", 
+					  			  "Argo",
+					  			  "The Town",
+					  			  (long) 4,
+					  			  "By Background: The Town is the only one not based on a real life event.",
+					  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("The Matador",
+					  			  "GoldenEye", 
+					  			  "Moonraker",
+					  			  "Dr. No",
+					  			  (long) 1,
+					  			  "By Character: The Matador is not a James Bond movie.",
+					  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("The Pledge",
+					  			  "The Wolf of Wall Street", 
+					  			  "Mars Attacks!",
+					  			  "One Flew Over the Cuckoo's Nest",
+					  			  (long) 2,
+					  			  "By Actor: The Wolf of Wall Street is the only one without Jack Nicholson.",
+					  			  (long)0);
+			gameSets.save(gameSet);
+			
+			gameSet = new GameSet("JFK",
+					  			  "Sleepers", 
+					  			  "Goodfellas",
+					  			  "A Few Good Men",
+					  			  (long) 3,
+					  			  "By Actor: Kevin Bacon does not appear in Goodfellas.",
+					  			  (long)0);
 			gameSets.save(gameSet);
 		}
 			

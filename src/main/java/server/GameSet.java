@@ -25,7 +25,7 @@ public class GameSet implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@JsonProperty("id")
 	private long id;
-		
+
 	private String firstFilmName;
 	private String secondFilmName;
 	private String thirdFilmName;
@@ -133,5 +133,13 @@ public class GameSet implements Serializable{
 
 	public void setExplanation(String explanation) {
 		this.explanation = explanation;
+	}
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 }
